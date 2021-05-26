@@ -94,7 +94,7 @@ const Home = () => {
                      <button className="loginbtn">Login</button>
                 </Link>
             </div> */}
-    </div>
+    
         </StyledHome>
 
     )
