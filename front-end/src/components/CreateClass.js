@@ -1,6 +1,6 @@
 import Raect, { useState } from 'react'
 import { useHistory } from "react-router-dom"
-import axiosWithAuth from '../../Utils/axiosWithAuth'
+import axiosWithAuth from '../Utils/axiosWithAuth'
 import styled from 'styled-components'
 
 
@@ -70,7 +70,7 @@ const initialFormValues = {
     IntensityLevel: '',
     Location: '',
     Attendees: 0,
-    ClassSize: ''
+    MaxClassSize: ''
 }
 
 const CreateClass = () => {
@@ -183,7 +183,7 @@ const CreateClass = () => {
                     type='text'
                     placeholder='enter maximum class size (e.g. 20)...'
                     name='ClassSize'
-                    value={formValues.ClassSize}
+                    value={formValues.MaxClassSize}
                     onChange={handleChange}
                     />
                 </label>

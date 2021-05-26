@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { axiosWithAuth } from "../../utils/axiosWithAuth";
+import axiosWithAuth from "../../Utils/axiosWithAuth";
 import Class from "./Class";
 
 const Classes = () => {
@@ -7,7 +7,7 @@ const Classes = () => {
 
   const fetchClasses = () => {
     return axiosWithAuth()
-      .get("/classes")
+      .get("api/classes")
       .then((res) => {
         return res;
       })
@@ -24,7 +24,7 @@ const Classes = () => {
       .catch((err) => {
         console.log(err);
       });
-  }, []);
+  },[]);
 
   const handleFetch = () => {
     fetchClasses()

@@ -28,12 +28,12 @@ const Class = (props) => {
         <div>
           <div className="classCard">
             <h2>{classNew.class_name}</h2>
-            <h3>Type: {classNew.type}</h3>
-            <h3>Start Time: {classNew.startTime}</h3>
-            <h3>Duration: {classNew.duration} minutes</h3>
-            <h3>Intensity: {classNew.intensity}</h3>
-            <h3>Location: {classNew.location}</h3>
-            <h3>Class Size: {classNew.size}</h3>
+            <h3>Type: {classNew.Type}</h3>
+            <h3>Start Time: {classNew.StartTime}</h3>
+            <h3>Duration: {classNew.Duration} minutes</h3>
+            <h3>Intensity: {classNew.IntensityLevel}</h3>
+            <h3>Location: {classNew.Location}</h3>
+            <h3>Class Size: {classNew.MaxClassSize}</h3>
             {user === "2" ? <Panel /> : ""}
             {toggleEdit ? (
               <EditClass
