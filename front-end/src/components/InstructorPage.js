@@ -1,6 +1,6 @@
 import React from 'react'
-import Classes from './Classes/Classes'
-// import Nav from '../components/Nav'
+import Classes from './classes/Classes'
+import Nav from '../components/Nav'
 
 const InstructorPage = () => {
     return (
