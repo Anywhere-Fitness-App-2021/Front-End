@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import Classes from "./Classes/Classes";
+import Classes from "./classes/Classes";
 import axios from "axios";
 
 const ClientPage = (props) => {

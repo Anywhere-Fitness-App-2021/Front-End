@@ -1,80 +1,30 @@
-//TECH IMPORTS
-import React, { useState, useEffect } from "react";
-import { Route, Link, Switch } from "react-router-dom";
-//STLYING IMPORTS
-import "../src/index.css";
-import logo from "../src/weight.PNG"
-//COMPONENT IMPORTS
-import CreateClass from './components/Classes/CreateClass'
-import Home from './components/Home/Home'
+import { Route } from "react-router-dom";
+import Home from "./components/Home";
+import Nav from "./components/Nav";
+import Choice from "./components/Choice";
+import "./App.css";
+import InstructorRegister from "./components/Registration";
+import ClientRegister from "./components/ClientRegister";
+import Login from "./components/Login";
+import PrivateRoute from "./components/PrivateRoute";
+import ClientPage from "./components/ClientPage";
+import InstructorPage from "./components/InstructorPage";
+import CreateClass from "./components/CreateClass";
 
 function App() {
   return (
-    <div>
-      <div className="mainHeadingLogoCombo">
-      <h1>Anywhere Fitness</h1>
-      <img className="logo" src={logo} alt="gym kettlebell" />
-      <Switch>
-
-        <Route exact path='/'>
-          <Home/>
-        </Route>
-
-        {/* <Route path = "/login">
-          <Login/>
-        </Route>
-
-        <Route path = "/signup">
-          <Signup/>
-        </Route> */}
-
-        <Route path='/create-class'>
-          <CreateClass/>
-        </Route>
-
-      </Switch>
-      </div>
+    <div className="App">
+      <Nav />
+      <Route exact path="/" component={Home} />
+      <Route path="/register" component={InstructorRegister}/>
+      <Route path="/clientregister" component={ClientRegister}/>
+      <Route path="/login" component={Login}/>
+      <Route exact path="/choice" component={Choice} />
+      <PrivateRoute exact path ="/client-page" component={ClientPage}/>
+      <PrivateRoute exact path ="/instructor-page" component={InstructorPage}/>
+      <PrivateRoute exact path = "/add-class" component={CreateClass}/>
     </div>
   );
 }
 
 export default App;
-
-// import "../src/index.css";
-// import logo from "../src/weight.PNG"
-// //COMPONENT IMPORTS
-// import CreateClass from './components/Classes/CreateClass'
-// import Home from './components/Home/Home'
-// import CreateClass from './components/CreateClass'
-// import Home from './components/Home'
-// import EditClass from './components/EditClass'
-// import InstructorPage from './components/InstructorPage'
-
-// function App() {
-//   return (
-// @@ -28,8 +30,21 @@ function App() {
-//           <Signup/>
-//         </Route> */}
-
-
-//         {/* <Route exact path = "/instructor">
-//           <InstructorPage/>
-//         </Route>
-//         <Route path='/create-class'>
-//           <CreateClass/>
-//         </Route> */}
-
-//         <Route path = "/instructor">
-//           <InstructorPage/>
-//         </Route>
-
-//         <Route path = "/instructor/edit-class/:ClassId">
-//           <EditClass/>
-//         </Route>
-
-//       </Switch>
-//       </div>
-//     </div>
-//   );
-// }
-// export default App;

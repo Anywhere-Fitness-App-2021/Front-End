@@ -2,6 +2,9 @@ import React from 'react'
 import styled from 'styled-components'
 import {useHistory} from 'react-router-dom'
 
+import trainer from "../components/images/trainer.jpeg";
+import { Link } from "react-router-dom";
+
 
 const StyledHome = styled.div`
 margin-right: 9%;
@@ -71,7 +74,29 @@ const Home = () => {
                 <button onClick={signup}>Sign Up</button>
                 <button onClick={login}>Login</button>
             </div>
+
+
+            {/* <div className="main">
+                <div className="top"></div>
+                <div className="image-container">
+                <img src={fit1} alt="" />
+             </div>
+            
+            <div className="btncontainer">
+                 <Link to="/choice">
+                    <button className="mainbtn">Join Now</button>
+                </Link>
+            </div>
+
+            <div className="bottom">
+                 <h3>Already have an account?</h3>
+                <Link to="/login">
+                     <button className="loginbtn">Login</button>
+                </Link>
+            </div> */}
+    
         </StyledHome>
+
     )
 }
 

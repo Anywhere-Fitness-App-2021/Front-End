@@ -1,0 +1,390 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+
+body {
+  background-color: #303030;
+}
+/*Nav Styles*/
+.navheader {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  font-family: "Open Sans";
+  font-weight: 800px;
+  width: 100%;
+}
+
+.links {
+  width: 50%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+}
+
+/* HOME */
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+}
+
+.main img {
+  width: 60%;
+  text-align: center;
+}
+
+.fit {
+  color: red;
+  text-align: center;
+  font-family: "Open Sans";
+}
+
+/* Image Styles */
+img {
+  display: flex;
+  justify-content: center;
+  width: 800px;
+  height: auto;
+  object-fit: cover;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+form label {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* text Styles*/
+.textcont {
+  color: white;
+  font-family: "Open Sans";
+  text-align: center;
+  font-size: 25px;
+}
+/* Button Styles */
+.btncontainer {
+  display: flex;
+  justify-content: center;
+}
+.mainbtn {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.loginbtn {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  margin-bottom: 100px;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Bottom Styles*/
+.bottom {
+  color: white;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.bottom a {
+  color: red;
+  margin-bottom: 100px;
+}
+
+/* Choice Styles*/
+
+.choicemain {
+  color: white;
+  text-align: center;
+}
+.choicemain span {
+  color: red;
+  font-size: 30px;
+  font-family: "Open Sans";
+  font-weight: bold;
+}
+
+.choiceimages {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-family: "Open Sans";
+  color: red;
+  margin-bottom: 50px;
+}
+
+.choiceimages img {
+  border-radius: 10px;
+  border: 2px solid transparent;
+  width: 30%;
+}
+
+.choiceimages img:hover {
+  border: 2px solid white;
+  cursor: pointer;
+}
+
+/* Registration Styles */
+.register {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 100%;
+  min-width: 256px;
+  min-height: 45vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  position: relative;
+  text-align: center;
+}
+.registerHeader {
+  color: red;
+}
+.registerFrom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.registerFrom label {
+  margin: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.registerFrom button {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.registerFrom button:hover {
+  background-color: white;
+  color: red;
+}
+
+/* Error message */
+.invalid-feedback {
+  color: red;
+  font-size: 1.2rem;
+}
+
+/* Login Form */
+.login {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 20%;
+  min-width: 256px;
+  min-height: 30vh;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+}
+.loginForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm input {
+  width: 50%;
+  margin-right: 40px;
+}
+
+.loginForm label {
+  margin: 15px;
+  color: white;
+  font-weight: bold;
+  margin-left: 40px;
+}
+
+.loginForm button {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  width: 50%;
+  padding: 10px;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+/* Search Bar */
+.searchSpan {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+}
+.searchBar {
+  width: 60%;
+  height: 25px;
+  padding: 5px;
+  border-radius: 10px;
+  border: 2px solid red;
+}
+
+/* CLasses Page */
+.classes {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* Cards Page*/
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+}
+
+.cardHolder {
+  text-align: center;
+  color: red;
+  margin-top: 50px;
+}
+
+.addBtn {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.addBtn button {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 25px;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* Card */
+
+.classCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  background: #303030;
+  border: solid white 2px;
+  border-radius: 10px;
+  color: white;
+  margin: 50px;
+  padding: 20px;
+}
+
+.classCardButton button {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+  padding: 10px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+
+/* Add Class */
+
+.page {
+  display: flex;
+  justify-content: center;
+}
+
+.addClass {
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 20%;
+
+  min-height: 45vh;
+
+  padding: 8px;
+
+  text-align: center;
+}
+
+.textContainer h2 {
+  color: red;
+}
+
+.addClassFrom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addClassFrom label {
+  margin: 15px;
+  color: white;
+  font-weight: bold;
+}
+
+.addClassFrom button {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.addClassFrom button:hover {
+  background-color: white;
+  color: red;
+}
